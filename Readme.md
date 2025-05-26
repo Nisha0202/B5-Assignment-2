@@ -7,7 +7,6 @@ PostgreSQL হলো একটি শক্তিশালী সফটওয়্
 3. একাধিক ইউজার ও রোল ম্যানেজমেন্ট
 4. এক্সটেনশন যোগ করার সুবিধা (যেমন PostGIS)
 
-
 # 3. Explain the Primary Key and Foreign Key concepts in PostgreSQL
 Primary Key এবং Foreign Key হলো PostgreSQL-এ টেবিলের মধ্যে সম্পর্ক নির্ধারণ করার জন্য গুরুত্বপূর্ণ দুটি ধারণা।
 ## Primary Key:
@@ -17,7 +16,6 @@ CREATE TABLE students (
   student_id SERIAL PRIMARY KEY,
   name TEXT
 );
-
 ```
 এখানে student টেবিলের মধ্যে student_id প্রতিটি ছাত্রকে আলাদা করে শনাক্ত করবে।
 ## Foreign Key:

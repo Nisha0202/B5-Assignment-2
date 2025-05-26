@@ -52,6 +52,7 @@ INSERT INTO sightings (species_id, ranger_id, location, sighting_time, notes) va
 
 -- Problem 1:Register a new ranger
 insert into rangers (name, region) VALUES ('Derek Fox', 'Coastal Plains');
+
 -- Problem 2: count unique species ever sighted
 select count(distinct species_id) as unique_species_count from sightings;
 

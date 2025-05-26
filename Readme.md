@@ -10,7 +10,7 @@ PostgreSQL হলো একটি শক্তিশালী সফটওয়্
 
 # 3. Explain the Primary Key and Foreign Key concepts in PostgreSQL
 Primary Key এবং Foreign Key হলো PostgreSQL-এ টেবিলের মধ্যে সম্পর্ক নির্ধারণ করার জন্য গুরুত্বপূর্ণ দুটি ধারণা।
-## Primary Key:
+** Primary Key:**
 প্রাইমারি কী এমন একটি কলাম বা কলামসমষ্টি যা টেবিলের প্রতিটি রেকর্ডকে ইউনিকভাবে চিহ্নিত করে। এর ভ্যালু কখনো ডুপ্লিকেট বা null হতে পারে না।
 ```
 CREATE TABLE students (
@@ -54,7 +54,7 @@ name VARCHAR(6)  -- "Nisha"
 
 ```
 
-## 5. Explain the purpose of the WHERE clause in a SELECT statement
+# 5. Explain the purpose of the WHERE clause in a SELECT statement
 WHERE ক্লজ PostgreSQL-এ ব্যবহৃত হয় একটি নির্দিষ্ট শর্ত (condition) অনুযায়ী রেকর্ড নির্বাচন করতে। এটি SELECT, UPDATE, DELETE—এই সব SQL কমান্ডে ব্যবহার করা যায়।
 ```
 SELECT * FROM students WHERE age > 16;
@@ -92,19 +92,15 @@ SELECT * FROM students OFFSET 5;
 SELECT * FROM students LIMIT 5 OFFSET 5;
 ```
 এই কুয়েরি প্রথম ৫টি রেকর্ড স্কিপ করে, পরবর্তী ৫টি রেকর্ড রিটার্ন করবে।
- এটি মূলত ৬ তম থেকে ১০ তম রেকর্ড পর্যন্ত রেজাল্ট দেবে।
+ এটি মূলত ৬ষ্ঠ থেকে ১০ তম রেকর্ড পর্যন্ত রেজাল্ট দেবে।
 
 
 
 ## সুবিধা:
-Pagination বা page-wise ডেটা লোড করতে সহজ হয়
-
-
-ওভারলোড বা বেশি ডেটা লোড হওয়ার ঝুঁকি কমায়
-
-
-ইউজার একবারে সব ডেটা না দেখে ধাপে ধাপে দেখতে পারে
-শুধু একটি নির্দিষ্ট সংখ্যক রেকর্ড দেখতে পারে
+- Pagination বা page-wise ডেটা লোড করতে সহজ হয়
+- ওভারলোড বা বেশি ডেটা লোড হওয়ার ঝুঁকি কমায়
+- ইউজার একবারে সব ডেটা না দেখে ধাপে ধাপে দেখতে পারে
+- শুধু একটি নির্দিষ্ট সংখ্যক রেকর্ড দেখতে পারে
 
 
 
